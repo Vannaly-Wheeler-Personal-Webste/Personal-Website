@@ -1,0 +1,32 @@
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    background-color: bisque;
+    font-family: cursive;
+    color: #11202e;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 52px;
+    letter-spacing: 4px;
+    line-height: 2;
+    text-shadow: 4px -2px 0 #8a8d8c;
+}
+.portfolio {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+}
+ 
+.aboutme {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+
+}
+article
+#portart1 {
+    display: inline-flex
+
+}
