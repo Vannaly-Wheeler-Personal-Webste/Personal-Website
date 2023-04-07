@@ -1,0 +1,121 @@
+.container {
+    display: grid; 
+    grid-auto-columns: 1fr 1fr; 
+    grid-template-columns: 33.3fr 19.8fr 19.9fr 0.1fr 1fr; 
+    grid-template-rows: 0.4fr 1.9fr 1.9fr; 
+    position: fixed;
+    gap: 50px; 
+    grid-template-areas: 
+      "photo header header . ."
+      "photo work work1 . ."
+      "photo work3 work4 . ."; 
+  }
+  .photo { 
+    position: relative;
+    display: flex;
+    margin-top: 150px;
+    grid-area: photo;
+    width: 75%;
+    height: auto;
+    box-sizing: border-box;
+    width: fit-content;
+    margin-left: 175px;
+    padding: 0;
+}
+.photo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+
+    
+}
+  .header { 
+    grid-area: header; 
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 3em;
+    border-radius: 100px 30px 180px 30px;
+    block-size:content;
+    color: rgb(73, 71, 71);
+    background: linear-gradient(180deg, lavender, transparent);
+
+
+}
+  .work { 
+    grid-area: work; 
+    padding: 7em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgb(185, 177, 177);
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+  
+}
+  .work1 { 
+    grid-area: work1; 
+    padding: 7em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgb(185, 177, 177);
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    
+}
+  .work3 { 
+    grid-area: work3;
+    padding: 7em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgb(185, 177, 177);
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+  .work4 { 
+    grid-area: work4; 
+    padding: 7em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgb(185, 177, 177);
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+.nav {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  height: 15%;
+  font-family: "Libre Baskerville", serif; 
+  font-size: 2em;
+  color: black;
+  margin: 0;
+  margin-left: -10px;
+  border: 0;
+  padding: 0;
+}
+a:link {
+  text-decoration: none;
+  text-emphasis-color: blac
+}
+a:visited {
+  text-decoration: none;
+  text-decoration-color: rgb(140, 19, 110);
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
