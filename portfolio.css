@@ -1,0 +1,182 @@
+.container {
+    display: grid; 
+    grid-auto-columns: 1fr 1fr; 
+    grid-template-columns: 33.3fr 19.8fr 19.9fr 0.1fr 1fr; 
+    grid-template-rows: 0.4fr 1.9fr 1.9fr; 
+    position: relative;
+    gap: 20px; 
+    grid-template-areas: 
+      "photo header header . ."
+      "photo work work1 . ."
+      "photo work3 work4 . ."; 
+  }
+  .photo { 
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    grid-area: photo;
+    width: 75%;
+    height: ;
+    box-sizing: border-box;
+    width: fit-content;
+    padding: 0;
+}
+.photo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: scale-down;
+
+    
+}
+  .header { 
+    grid-area: header; 
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 75vp;
+    border-radius: 100px 30px 180px 30px;
+    block-size:content;
+    color: rgb(73, 71, 71);
+    background: linear-gradient(180deg, lavender, transparent);
+
+}
+
+  .work { 
+    grid-area: work; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgb(185, 177, 177);
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 125%;
+  
+}
+  .work1 { 
+    grid-area: work1; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgb(185, 177, 177);
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 125%;
+}
+  .work3 { 
+    grid-area: work3; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgb(185, 177, 177);
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 125%;
+}
+  .work4 { 
+    grid-area: work4; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgb(185, 177, 177);
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 125%;
+  }
+.mainnav {
+  background-color: #513347;
+  overflow: hidden;
+  max-height: 200vh;
+}
+
+.mainnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.mainnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+
+/*
+.contact {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  color: rgb(63, 44, 68);
+  text-align: center; 
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 3px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical; 
+}
+input[type=submit] {
+  background-color: #513347;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #a04591;
+}
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
